@@ -17,8 +17,7 @@ class TestController extends Controller
             );
             DB::commit();
             return view('Test', ['data' => 2222]);
-        }catch (\Exception $e) {
-
+        }catch (\Exception $e) {//111
             //接收异常处理并回滚
 
             DB::rollBack();
